@@ -1,8 +1,7 @@
-import { useState } from 'react'
+import React from 'react'
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
-import Home from './components/Home'
-import AboutUs from './components/AboutUs'
-import './App.css'
+import Home from './pages/Home'
+import About from './pages/About/About'
 
 function App() {
   return (
@@ -21,7 +20,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutUs />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </div>
     </Router>
